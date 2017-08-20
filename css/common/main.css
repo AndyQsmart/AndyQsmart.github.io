@@ -1,0 +1,11 @@
+.Titles{
+    color:gray;
+    text-align: center;
+}
+
+.CopyRight{
+    color: white;
+    background-color: #282828;
+    text-align: center;
+    padding: 5px;
+}
