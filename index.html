@@ -4,35 +4,54 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="css/common/main.css">
-  <link rel="icon" href="images/avatar.jpg" type="image/x-icon">
   <title>我的网页</title>
+  <link rel="icon" href="images.old/avatar.jpg" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/common/main.css">
+  <link rel="stylesheet" href="lib/swiper/swiper.min.css">
+  <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+  <script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
 </head>
 
 <body>
-  <div>
-    <a class="QLogo" href="index.html">
-      <img src="images/avatar.jpg" alt="logo" width="50">
-    </a>
+    <div class="QTop">
+        <div class="QTopText"><广告></div>
+    </div>
 
     <div class="QTitlePanel">
-      <a href="index.html" class="QTitleIsOn">首页</a>
-      <a href="html/games" class="QTitle">游戏中心</a>
-      <a href="html/news" class="QTitle">活动中心</a>
-      <a href="about_us.html" class="QTitle">关于我们</a>
-      <a href="join_us.html" class="QTitle">加入我们</a>
-      <a class="nav_btn" href="javascript:;"></a>
+        <!-- <a class="QLogo" href="index.html">
+            <img src="images/avatar.jpg" alt="logo" height="40">
+        </a> -->
+        <a href="index.html" class="QTitle">首页</a>
+        <a href="html/games" class="QTitle">游戏中心</a>
+        <a href="html/news" class="QTitle">活动中心</a>
+        <a href="about_us.html" class="QTitle">关于我们</a>
+        <a href="join_us.html" class="QTitle">加入我们</a>
+        <!-- <a class="nav_btn" href="javascript:;"></a> -->
     </div>
-  </div>
+
+    <div class="banner_bg" style="height: auto; position: relative; top: 0">
+        <div class="swiper-container1" style="padding-top: 92px">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="http://www.aiwan.com/html/2017/games_0731/1.html"><img src="images.old/pic1.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="http://www.aiwan.com/html/2017/games_0731/1.html"><img src="images.old/pic2.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="http://www.aiwan.com/html/2017/games_0731/1.html"><img src="images.old/pic3.png" alt=""></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-button-next" style="background: url(img/next.png); background-size: auto 100%;background-position: 2px top;right: 0"></div>
+            <div class="swiper-button-prev" style="background: url(img/prev.png);background-size: auto 100%; background-position: center top;left: 0"></div>
+            <!-- Add Arrows -->
+                <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
 
   <!-- <a href="http://www.baidu.com">
       <h1 class="QTitles">我的第一个标题</h1>
     </a> -->
-  <hr/>
-  <p>我的第一个段落</p>
-  <img src="images/pic1.png" alt="pic1.png" height="142" />
+  <!-- <img src="images.old/pic1.png" alt="pic1.png" height="142" /> -->
 </body>
 
+  <hr/>
 <div class="QCopyRight">
   <p>Copyright © 2016 - 2017</p>
 </div>

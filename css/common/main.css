@@ -1,46 +1,61 @@
+body{
+    background-color: rgb(242, 242, 242)
+}
+
+.QTop{
+    background-color: #444444;
+    color: #858586;
+    height: 40px;
+    padding-right: 10%;
+}
+
+.QTopText{
+    font-size: 15px;
+    float: right;
+    transform: translateY(50%);
+}
+
 .QLogo{
+    height: 40px;
     /* text-align: center; */
     /* padding-left: 15px;
     padding-right: 15px; */
 }
 
 .QTitle{
-    color:black;
+    display: table-cell;
+    vertical-align: middle;
+    color:white;
     text-align: center;
     text-decoration: none;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .QTitle:hover{
-    color:#eb5767;
-    text-align: center; 
-    text-decoration: none;
-    padding-left: 15px;
-    padding-right: 15px;
+    color:#858586;
 }
 
 .QTitle:active{
-    color:red;
-    text-align: center; 
-    text-decoration: none;
-    padding-left: 15px;
-    padding-right: 15px;
+    color:#858586;
 }
 
 .QTitleIsOn{
-    color:red;
+    display: table-cell;
+    vertical-align: middle;
+    color:#858586;
     text-align: center; 
     text-decoration: none;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .QTitlePanel{
+    display: table;
+    background-color: black;
+    color: white;
     text-align: center;
+    height: 40px;
+    width: 100%;
     /* margin-top: 40px; */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
     /* background-color: black; */
 }
 
