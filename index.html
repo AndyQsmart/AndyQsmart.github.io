@@ -56,32 +56,41 @@
         </div>
     </div>
 
-    <li class="ctrl">
-            <a class="img_box" style="border:0" href="http://www.aiwan.com/html/2017/games_0731/1.html">
-                <div class="game_pic">
-                    <img src="http://admin.aiwan.com/uploadfile/2017/0814/20170814012452272.png" class="img">
+    <div >
+    <ul>
+        <li class="QImageBoxList">
+            <a class="QImageBox" style="border:0" href="">
+                <div class="QImageBoxItem">
+                    <img src="images.old/pic1.png" class="QImage" style="width:100%">
                 </div>
-                <p class="game_name">爱玩仙桃晃晃</p>
-                <span class="game_sp">独特玩法，绝对刺激得到全国麻友的推崇</span>
+                <p class="QImageBoxTitle">pic1</p>
+                <span class="QImageBoxSp">it is pic1</span>
             </a>
         </li>
-        <li class="ctrl">
-            <a class="img_box" style="border:0" href="http://www.aiwan.com/html/2017/games_0731/1.html">
-                <div class="game_pic">
-                    <img src="img/c2.jpg" class="img">
+        <li class="QImageBoxList">
+            <a class="QImageBox" style="border:0" href="">
+                <div class="QImageBoxItem">
+                    <img src="images.old/pic2.png" class="QImage" style="width:100%">
                 </div>
-                <p class="game_name">爱玩洪湖麻将</p>
-                <span class="game_sp">独特玩法，绝对刺激得到全国麻友的推崇</span>
+                <p class="QImageBoxTitle">pic2</p>
+                <span class="QImageBoxSp">it is pic2</span>
             </a>
         </li>
+    </ul>
+    </div>
 
-
-    <hr/>
     <div class="QCopyRight">
+        <hr/>
         <p>Copyright © 2016 - 2017</p>
     </div>
 
 <script>
+    $('.QImageBoxList').mouseenter(function(){
+        $(this).find('.inner_text2').stop(true,true).fadeIn()
+    }).mouseleave(function(){
+        $(this).find('.inner_text2').stop(true,true).fadeOut()
+    })
+
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',//页码
         nextButton: '.swiper-button-next',//下一页
@@ -113,6 +122,22 @@
     }).mouseleave(function(){//离开开启
         swiper1.startAutoplay();
     });
+
+    // window.onload = function()
+    // {
+    //     //获取屏幕宽度
+    //     var wi = screen.availWidth;
+    //     //设变量si
+    //     var si = parseFloat(wi)/16+'px';
+    //     //HTML字体大小等于si
+    //     document.getElementsByTagName('html')[0].style.fontSize = si;
+    //     //如果si大于40根字体为40px
+    //     if(parseInt(si) > 40)
+    //     {
+    //         document.getElementsByTagName('html')[0].style.fontSize = "40px";
+    //     } 
+    // }
+
 </script>
 
 </body>

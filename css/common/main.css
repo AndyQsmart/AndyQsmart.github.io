@@ -56,9 +56,40 @@ body{
     text-align: center;
 }
 
+.QImageBoxList{
+    list-style: none;
+    float: left;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.QImageBox{
+    /* text-align: center; */
+}
+
+.QImageBoxItem{
+
+}
+
+.QImage{
+
+}
+
+.QImageBoxTitle{
+    text-align: center;
+    text-decoration: none;
+}
+
+.QImageBoxSp{
+    text-align: center;
+    text-decoration: none;
+}
+
 .QCopyRight{
     color: rgb(152, 152, 152);
     /* background-color: #282828; */
     text-align: center;
+    clear: left;
     padding: 5px;
 }
