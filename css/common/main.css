@@ -1,6 +1,47 @@
-.QTitles{
-    color:gray;
+.QLogo{
+    /* text-align: center; */
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.QTitle{
+    color:black;
     text-align: center;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.QTitle:hover{
+    color:#eb5767;
+    text-align: center; 
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.QTitle:active{
+    color:red;
+    text-align: center; 
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.QTitleIsOn{
+    color:red;
+    text-align: center; 
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.QTitlePanel{
+    text-align: center;
+    /* margin-top: 40px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: black; */
 }
 
 .QCopyRight{
