@@ -3,13 +3,13 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="utf-8" />
-  <title>我的网页</title>
-  <link rel="icon" href="images.old/avatar.jpg" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/common/main.css">
-  <link rel="stylesheet" href="lib/swiper/swiper.min.css">
-  <script type="text/javascript" src="lib/jquery/jquery.js"></script>
-  <script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
+    <meta charset="utf-8" />
+    <title>我的网页</title>
+    <link rel="icon" href="images.old/avatar.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/common/main.css">
+    <link rel="stylesheet" href="lib/swiper/swiper.min.css">
+    <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+    <script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
 </head>
 
 <body>
@@ -22,38 +22,80 @@
             <img src="images/avatar.jpg" alt="logo" height="40">
         </a> -->
         <a href="index.html" class="QTitle">首页</a>
-        <a href="html/games" class="QTitle">游戏中心</a>
-        <a href="html/news" class="QTitle">活动中心</a>
-        <a href="about_us.html" class="QTitle">关于我们</a>
-        <a href="join_us.html" class="QTitle">加入我们</a>
+        <a href="" class="QTitle">信息中心</a>
+        <a href="" class="QTitle">活动中心</a>
+        <a href="" class="QTitle">关于我们</a>
+        <a href="" class="QTitle">加入我们</a>
         <!-- <a class="nav_btn" href="javascript:;"></a> -->
     </div>
 
-    <div class="banner_bg" style="height: auto; position: relative; top: 0">
-        <div class="swiper-container1" style="padding-top: 92px">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="http://www.aiwan.com/html/2017/games_0731/1.html"><img src="images.old/pic1.png" alt=""></a></div>
-                <div class="swiper-slide"><a href="http://www.aiwan.com/html/2017/games_0731/1.html"><img src="images.old/pic2.png" alt=""></a></div>
-                <div class="swiper-slide"><a href="http://www.aiwan.com/html/2017/games_0731/1.html"><img src="images.old/pic3.png" alt=""></a></div>
+    <div class="QBannerPanel" style="position: relative; top: 0">
+        <div class="swiper-container1" style="width: 100%">
+            <div class="swiper-wrapper" >
+                <div class="swiper-slide" >
+                    <a href="">
+                        <img src="image/show_image/1.jpg" alt="" style="width: 60%">
+                    </a>
+                </div>
+                <div class="swiper-slide" >
+                    <a href="">
+                        <img src="image/show_image/2.jpg" alt="" style="width: 60%">
+                    </a>
+                </div>
+                <div class="swiper-slide" >
+                    <a href="">
+                        <img src="image/show_image/3.jpg" alt="" style="width: 60%">
+                    </a>
+                </div>
             </div>
             <!-- Add Pagination -->
-            <div class="swiper-button-next" style="background: url(img/next.png); background-size: auto 100%;background-position: 2px top;right: 0"></div>
-            <div class="swiper-button-prev" style="background: url(img/prev.png);background-size: auto 100%; background-position: center top;left: 0"></div>
+            <div class="swiper-button-next" style="background: url(image/btn/btn_next.png); background-size: auto 100%;background-position: 2px top;right: 0"></div>
+            <div class="swiper-button-prev" style="background: url(image/btn/btn_prev.png);background-size: auto 100%; background-position: center top;left: 0"></div>
             <!-- Add Arrows -->
-                <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
+    <hr/>
+    <div class="QCopyRight">
+        <p>Copyright © 2016 - 2017</p>
+    </div>
 
-  <!-- <a href="http://www.baidu.com">
-      <h1 class="QTitles">我的第一个标题</h1>
-    </a> -->
-  <!-- <img src="images.old/pic1.png" alt="pic1.png" height="142" /> -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',//页码
+        nextButton: '.swiper-button-next',//下一页
+        prevButton: '.swiper-button-prev',//上一页
+        paginationClickable: true,//点击页码
+        spaceBetween: 0,//分页间距
+        centeredSlides: true,
+        autoplay: 2500,//自动播放
+        autoplayDisableOnInteraction: false,
+        loop: true //循环
+    });
+
+    var swiper1 = new Swiper('.swiper-container1', {
+        pagination: '.swiper-pagination',//页码
+		nextButton: '.swiper-button-next',//下一页
+        prevButton: '.swiper-button-prev',//上一页
+        // direction:'vertical',//上下滚动
+        paginationClickable: true,//点击页码
+        spaceBetween: 0,//分页间距
+        centeredSlides: true,
+        autoplay: 2500,//自动播放
+        speed:600,
+        autoplayDisableOnInteraction: false,
+        effect: 'coverflow',
+        loop: true ,//循环
+    });
+    $(".swiper-container1").mouseenter(function () {//滑过悬停
+        swiper1.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
+    }).mouseleave(function(){//离开开启
+        swiper1.startAutoplay();
+    });
+</script>
+
 </body>
 
-  <hr/>
-<div class="QCopyRight">
-  <p>Copyright © 2016 - 2017</p>
-</div>
 
 </html>
