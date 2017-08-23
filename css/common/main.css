@@ -65,6 +65,7 @@ body{
 }
 
 .QImageBox{
+    text-decoration: none;
     /* text-align: center; */
 }
 
@@ -78,12 +79,12 @@ body{
 
 .QImageBoxTitle{
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .QImageBoxSp{
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .QCopyRight{
