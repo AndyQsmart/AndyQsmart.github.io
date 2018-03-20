@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <title>我的网页</title>
+    <link rel="icon" href="images.old/avatar.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/common/main.css">
+    <link rel="stylesheet" href="lib/swiper/swiper.min.css">
+    <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+    <script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
+</head>
+
+<body>
+    <div class="QTop">
+        <div class="QTopText">
+            <广告>
+        </div>
+    </div>
+
+    <div class="QTitlePanel">
+        <!-- <a class="QLogo" href="index.html">
+            <img src="images/avatar.jpg" alt="logo" height="40">
+        </a> -->
+        <a href="index.html" class="QTitle">首页</a>
+        <a href="" class="QTitle">信息中心</a>
+        <a href="" class="QTitle">活动中心</a>
+        <a href="" class="QTitle">关于我们</a>
+        <a href="" class="QTitle">加入我们</a>
+        <!-- <a class="nav_btn" href="javascript:;"></a> -->
+    </div>
+
+    <div class="QBannerPanel" style="position: relative; top: 0">
+        <div class="swiper-container" style="width: 100%">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="image/show_image/1.png" alt="" style="width: 100%">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="image/show_image/2.png" alt="" style="width: 100%">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="image/show_image/3.png" alt="" style="width: 100%">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-button-next" style="background: url(image/btn/btn_next.png); background-size: auto 100%; background-position: 2px top; right: 0"></div>
+            <div class="swiper-button-prev" style="background: url(image/btn/btn_prev.png); background-size: auto 100%; background-position: center top;left: 0"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div>
+        <ul>
+            <li class="QImageBoxList">
+                <a class="QImageBox" style="border:0" href="">
+                    <div class="QImageBoxItem">
+                        <img src="image/item_image/1.png" class="QImage" style="width:100%">
+                    </div>
+                    <p class="QImageBoxTitle">pic1</p>
+                    <span class="QImageBoxSp">it is pic1</span>
+                </a>
+            </li>
+            <li class="QImageBoxList">
+                <a class="QImageBox" style="border:0" href="">
+                    <div class="QImageBoxItem">
+                        <img src="image/item_image/2.png" class="QImage" style="width:100%">
+                    </div>
+                    <p class="QImageBoxTitle">pic2</p>
+                    <span class="QImageBoxSp">it is pic2</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="QCopyRight">
+        <hr/>
+        <p>Copyright © 2016 - 2017</p>
+    </div>
+
+    <script>
+        $('.QImageBoxList').mouseenter(function () {
+            $(this).find('.inner_text2').stop(true, true).fadeIn()
+        }).mouseleave(function () {
+            $(this).find('.inner_text2').stop(true, true).fadeOut()
+        })
+
+        var swiper = new Swiper('.swiper-container',
+            {
+                pagination: '.swiper-pagination',//页码
+                nextButton: '.swiper-button-next',//下一页
+                prevButton: '.swiper-button-prev',//上一页
+                // direction:'vertical',//上下滚动
+                paginationClickable: true,//点击页码
+                spaceBetween: 0,//分页间距
+                centeredSlides: true,
+                autoplay: 2500,//自动播放
+                speed: 600,
+                autoplayDisableOnInteraction: false,
+                effect: 'coverflow',
+                loop: true,//循环
+            });
+        $(".swiper-container").mouseenter(function () {//滑过悬停
+            swiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
+        }).mouseleave(function () {//离开开启
+            swiper.startAutoplay();
+        });
+
+    // window.onload = function()
+    // {
+    //     //获取屏幕宽度
+    //     var wi = screen.availWidth;
+    //     //设变量si
+    //     var si = parseFloat(wi)/16+'px';
+    //     //HTML字体大小等于si
+    //     document.getElementsByTagName('html')[0].style.fontSize = si;
+    //     //如果si大于40根字体为40px
+    //     if(parseInt(si) > 40)
+    //     {
+    //         document.getElementsByTagName('html')[0].style.fontSize = "40px";
+    //     } 
+    // }
+
+    </script>
+
+</body>
+
+
+</html>
